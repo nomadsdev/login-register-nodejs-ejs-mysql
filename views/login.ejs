@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center">
+        <div class="p-10">
+            <h2 class="text-2xl text-blue-600">Login</h2>
+            <div class="bg-blue-600 w-5 h-1 rounded-full"></div>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div>
+            <form action="/login" method="POST">
+                <div class="flex justify-center gap-3">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username" required class="border border-blue-600 text-blue-600 rounded-full px-2">
+                </div>
+                <br>
+                <div class="flex justify-center gap-3">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" required class="border border-blue-600 text-blue-600 rounded-full px-2">
+                </div>
+                <div class="pt-5">
+                    <button type="submit" class="text-white bg-blue-600 px-5 py-1 rounded-full text-xs">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="pt-10 text-xs flex justify-center">
+        <p>Don't have an account? <a href="/register" class="text-blue-600">Register</a></p>
+    </div>
+</body>
+</html>
